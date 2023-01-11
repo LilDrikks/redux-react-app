@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
+import { decrementar, incrementar } from './redux_store/slice';
 
 function App() {
 
@@ -7,9 +8,9 @@ function App() {
   const dispatch = useDispatch()
   return (
     <div className="App">
-      <h1>total: {state}</h1>
-      <button onClick={() => dispatch({type:'INCREMENTAR'}) }>incrementar</button>
-      <button onClick={() => dispatch({type:'DECREMENTAR'}) }>decrementar</button>
+      <h1>total: { state }</h1>
+      <button onClick={() => dispatch(incrementar()) }>incrementar</button>
+      <button onClick={() => dispatch(decrementar()) }>decrementar</button>
     </div>
   );
 }

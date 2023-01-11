@@ -1,4 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-import contador from './contador';
+import slice from './slice';
 
-export const store = configureStore({reducer: contador}) 
+export const store = configureStore({reducer: slice}) 
