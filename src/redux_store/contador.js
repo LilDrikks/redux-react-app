@@ -3,6 +3,7 @@ import { createAction } from "@reduxjs/toolkit";
 export const incrementar = createAction("INCREMENTAR");
 export const decrementar = createAction("DECREMENTAR");
 
+//react toolkit ja vem com immer
 const contador = (state = 0, action) => {
   switch (action.type) {
     case incrementar.type:
